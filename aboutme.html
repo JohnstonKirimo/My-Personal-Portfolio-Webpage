@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="Johnston Kirimo">
+	<meta name="author" content="Johnston Kirimo">
+	<title>johnston kirimo webpage</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body id="about" data-spy="scroll" data-target=".navbar" data-offset="70">
+
+	<header>
+		<div class="container">
+			<div id="name">
+				<h1><span class="highlight">Johnston Kirimo</span></h1>
+			</div>
+			
+			<nav class="navbar-expand-lg">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="current"><a href="aboutme.html">About Me</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		
+	</header>
+	<section id="main">
+		<div class="container">
+			<article id="main-col">
+			    <h1 class="p">My Story</h1>
+			    <p class="dark">Born in the coastal region of Kilifi, Kenya. Went to Bogamachuko Primary School where I completed my KCPE. Pursued my highschool education in Nairobi at Lenana School before heading back to Mombasa where I completed the International Baccalaurette (IB) Diploma at the AgaKhan Academy Mombasa. Afterwards, I travelled to Vancouver, Canada, where I did my undergraduate degree in the faculty of Commerce at the Sauder School of Business.
+			    </p>
+			    <p class="dark">Currently, my career interests are in Business and Software Development. My goal is to eventualy go back to Kilifi and help fellow young people to start their own businesses so as to attain financial freedom and contribute towards economic development of the country.  
+			    </p>
+			</article>
+		</div>
+    </section>
+    <section>
+        <div class="container">
+		    <aside id="sidebar">
+				<h2>Hobbies</h2>
+				<ul class="dark">
+					<li><strong>Coding</strong></li>
+					<p>Started off as something to pass time when I was extremely bored. Currently, I love writing code and on average spend atleast an hour everyday writing code or learning a new language.</p>
+					<li><strong>Running</strong></li>
+					<p>I run about 10km every week. Okay maybe less - actually a lot less. Point is, running has significantly improved my mental and phyical health and I just can't stop.</p>
+					<li><strong>Football</strong></li>
+					<p>This is a childhood sport. I grew up playing everyday of my life until finishing highschool. I am no Ronaldo or Messi but I am better than average - I play for fun.</p>
+					<li><strong>Reading</strong></li>
+					<p>This is another childhood hobby of mine. Started reading novels in order to write good essay compositions and improve vocabulary back in elementary school. Eventually fell in love with reading. Let's get coffee and chat about all sorts of literature and poetry, from Chinua Achebe and Ngugi Wa Thiong'o to Shakespeare and Walt Whitman.</p>
+				</ul>
+			</aside>
+			
+		</div>
+	</section>
+	<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+	<footer>
+		<p>Johnston Kirimo, copyright &copy; 2018</p>
+	</footer>
+
+</body>
+</html>

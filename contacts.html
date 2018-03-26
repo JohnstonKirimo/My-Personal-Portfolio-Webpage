@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="Johnston Kirimo">
+	<meta name="author" content="Johnston Kirimo">
+	<title>johnstonkirimo personalpage</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+	<header>
+    	<div class="container">
+    		<div id="name">
+    			<h1><span class="highlight">Johnston Kirimo</span></h1>
+    		</div>
+    		<nav class="navbar-expand-lg">
+    			<ul class="nav navbar-nav">
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="aboutme.html">About Me</a></li>
+    				<li><a href="resume.html">Resume</a></li>
+    				<li><a href="portfolio.html">Portfolio</a></li>
+    				<li class="current"><a href="contacts.html">Contacts</a></li>
+
+    			</ul>
+    		</nav>
+    		
+    	</div>
+    	
+    </header> 
+    <section>
+        <div id=" form-group">
+            <div class="container">
+            <h3>Let's get in touch!</h3>
+            <form>
+                <button>Name</button><br>
+                <input type="text" placeholder="Enter full name"><br>
+                <br><button>Email</button><br>
+                <input type="email" placeholder="Enter email"><br>
+                <br><button>Phone</button><br>
+                <input type="number" placeholder= "Enter phone number"><br>
+                <br><button>Message</button><br>
+                <input type="text" style="width: 600px; height:250px" placeholder="Enter message here"><br>
+                <br><button style="background-color: #cccccc">Send</button>
+            </form>
+            </div>
+                
+            </div>
+    </section>   
+    <section>
+    <div class="container">
+        <div class="col-sm-3">
+            <div class="row">
+        <h4>Feel free to connect with me on social media:</h4>
+            <div>
+            <a href="https://twitter.com/jkirimo/">    
+            <alt="twitter">
+            <img src="../img/twitter_001.png">     
+            </a>
+            <a href="https://www.instagram.com/kirimo_jr/">
+            <alt="Instagram">
+            <img src="../img/instagram_001.png">
+            </a>
+            <a href="https://www.facebook.com/jkirimo">
+            <alt="facebook"> 
+            <img src="../img/facebook_001.png" type="">
+            </a>   
+            <a href="https://github.com/JohnstonKirimo/johnston-kirimo-cc.github.io">
+            <alt="Github">
+            <img src="../img/Github_001.png">
+            </a>
+            <a href="https://www.linkedin.com/in/johnstonkirimo/">
+            <alt="linkedin">
+            <img src="../img/linkedin_001.png">
+            </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+    <footer>
+    	<p>Johnston Kirimo, copyright &copy; 2018</p>
+    	
+    </footer>
+
+</body>
+</html>
+
